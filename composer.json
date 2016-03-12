@@ -1,0 +1,15 @@
+{
+  "name": "drawski/wp-protect-original-images",
+  "description": "WordPress plugin to make your images in original size secure",
+  "type": "wordpress-plugin",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "composer/installers": "^1.0"
+  },
+  "license": "MIT",
+  "authors": [{
+    "name": "Damian Rawski",
+    "email": "d.rawski@gmail.com"
+  }]
+}
