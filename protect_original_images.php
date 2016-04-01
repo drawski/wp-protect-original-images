@@ -4,7 +4,7 @@ Plugin Name: Protect Original Images
 Description: WordPress plugin to make your images in original size secure
 Version: 0.1
 Author: Damian Rawski
-License: GPL
+License: GPLv2
 Copyright: Damian Rawski
 */
 

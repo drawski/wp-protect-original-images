@@ -7,7 +7,7 @@
   "require": {
     "composer/installers": "^1.0"
   },
-  "license": "MIT",
+  "license": "GPLv2",
   "authors": [{
     "name": "Damian Rawski",
     "email": "d.rawski@gmail.com"
