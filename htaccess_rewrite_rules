@@ -2,7 +2,7 @@
 <IfModule mod_rewrite.c>
     RewriteCond %{HTTP_REFERER} !^[[ADMIN_URL]].*$
     RewriteCond %{REQUEST_URI} ^/app/uploads/.+
-    RewriteCond %{REQUEST_FILENAME} ^.*?(?<!\-\d|\d\d|\d\d\d|\d\d\d\dx\d|\d\d|\d\d\d|\d\d\d\d)\.(jpg|jpeg|gif|png|bmp)
+    RewriteCond %{REQUEST_FILENAME} !^.+\-(\d\d\d\d|\d\d\d|\d\d)x(\d\d\d\d|\d\d\d|\d\d)\.(jpg|jpeg|gif|png|bmp)
     RewriteRule . - [R=404,L]
 </IfModule>
 # END Secure Original Images
