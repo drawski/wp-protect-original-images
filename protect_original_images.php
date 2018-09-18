@@ -20,6 +20,8 @@ class ProtectOriginalImages {
         add_filter('mod_rewrite_rules', [$this, 'addRewriteRules']);
         add_filter('the_content', [$this, 'replaceUrlsInImgTags']);
         add_filter('the_content', [$this, 'replaceUrlsInAnchors']);
+        add_filter('the_content_protect_images', [$this, 'replaceUrlsInImgTags']);
+        add_filter('the_content_protect_images', [$this, 'replaceUrlsInAnchors']);
         register_activation_hook(__FILE__, [$this, 'activate']);
         register_deactivation_hook(__FILE__, [$this, 'deactivate']);
     }
