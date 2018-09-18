@@ -89,7 +89,8 @@ class ProtectOriginalImages {
     }
 
     public function addRewriteRules($rules) {
-        $rulesTemplate = str_replace('[[ADMIN_URL]]', get_admin_url(), file_get_contents(__DIR__.'/htaccess_rewrite_rules'));
+        $adminUrl = str_replace('.', '\.', get_admin_url());
+        $rulesTemplate = str_replace('[[ADMIN_URL]]', $adminUrl, file_get_contents(__DIR__.'/htaccess_rewrite_rules'));
         return $rules . $rulesTemplate;
     }
 
